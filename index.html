@@ -5,162 +5,160 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>LIDE — Bridging People and Digital</title>
 <link rel="stylesheet" href="LIDEstyle.css" />
-<style> /* Basic styles retained for table structure readability without LIDEstyle.css */ body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; } 
-    .container { 
-      max-width: 1200px; margin: auto; padding: 0 20px; 
-    } 
-  section { 
-    padding: 40px 0; 
-  } 
-  h2 { 
-    color: #333; 
-    border-bottom: 2px solid #eee; 
-    padding-bottom: 10px; 
-    margin-top: 20px; 
-  } 
-  table { 
-    width: 100%; 
-    border-collapse: 
-    collapse; margin-top: 10px; 
-    font-size: 0.9em; 
-  } 
-  th, td { 
-    border: 1px 
-    solid #ccc; 
-    padding: 10px; 
-    text-align: left; 
-  } 
-  th { background-color: #f4f4f4; } .note { background-color: #fffacd; padding: 15px; border-left: 5px solid #ffcc00; margin-top: 20px; margin-bottom: 40px; } .package-list { list-style-type: none; padding-left: 0; } .package-list li:before { content: "➔ "; color: #555; font-weight: bold; margin-right: 5px; } .nav-links, .footer-links { list-style: none; padding: 0; margin: 0; } /* Placeholder classes for Projeeeect structure */ .overlay-header, .hero, .hero-overlay, .hero-content { /* Structure retained from */ } </style>
 </head>
 <body>
-<header class="navbar">
-  <a href="index.html" class="logo">LIDE</a>
+<header class="overlay-header">
+  <div class="container header-container">
+    <a href="index.html" class="logo-link">
+      <img src="lide-logo.png" alt="LIDE Logo" class="lide-logo" />
+      <span class="abbreviation-title">LIDE</span>
+    </a>
 
-  <!-- Hamburger menu button -->
-  <div class="menu-toggle" id="mobile-menu">
-    ☰
+    <!-- Hamburger menu button -->
+    <div class="menu-toggle" id="mobile-menu">☰</div>
+
+    <!-- Navigation links -->
+    <nav class="nav-links" id="nav-links">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </div>
+</header>
 
-  <!-- Navigation links -->
-  <nav class="nav-links">
-    <ul>
-      <li><a href="contact.html">Services</a></li>
+<section class="hero fullscreen">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="lide-hero.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="hero-overlay">
+    <div class="hero-content">
+      <h1>Bridging People and Digital</h1>
+      <p>Why Should the Digital World Feel Out of Reach?</p>
+      <a href="#about-lide" class="btn primary">Discover More</a>
+    </div>
+  </div>
+</section>
+
+<section id="about-lide" class="features container">
+  <h2>About LIDE (Link-ID-Entity)</h2>
+  <article>
+    <h3>Mission & Purpose</h3>
+    <p>LIDE (Link-ID-Entity) is a full-service digital environment company. We make digital tools accessible, affordable, and valuable for individuals, growing organisations, and enterprises.</p>
+  </article>
+  <article>
+    <h3>Human-First Design</h3>
+    <p>Every solution begins with people — we create experiences that feel natural, intuitive, and impactful, empowering individuals and organizations to grow confidently in the digital world.</p>
+  </article>
+  <article>
+    <h3>Scalability and Ownership</h3>
+    <p>LIDE’s ecosystems expand with your ambitions. We retain ownership of the systems we build, giving clients control and clarity while reducing maintenance burdens.</p>
+  </article>
+</section>
+
+<section id="services" class="container">
+  <h2>What We Do</h2>
+  <p>We build and maintain your digital presence across multiple platforms and systems. Our services are grouped into three key areas:</p>
+  <ol>
+    <li><strong>Front Access</strong> – Public-facing digital identity (Websites, social media integration, messaging, streaming, community platforms).</li>
+    <li><strong>Function Access</strong> – Tools that save time (Automation, chatbots, workflow systems).</li>
+    <li><strong>Environment Access</strong> – Internal digital ecosystem (Hosting, communication, data management, analytics).</li>
+  </ol>
+  <h3>How Our Model Works</h3>
+  <ul class="package-list">
+    <li><strong>Setup Fee</strong> – Builds your custom digital environment.</li>
+    <li><strong>Subscription Fee</strong> – Maintains your access to systems, updates, and support.</li>
+  </ul>
+</section>
+
+<section id="subscriptions" class="container">
+  <h2>FRONT ACCESS SUBSCRIPTION (FAS) PACKAGES</h2>
+
+  <h3>INDIVIDUAL PACKAGES</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Package</th>
+        <th>Price</th>
+        <th>Target Audience</th>
+        <th>What is Included</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td data-label="Package"><strong>Startup Front Access</strong></td>
+        <td data-label="Price"><strong>R120/month</strong></td>
+        <td data-label="Target Audience">Individuals wanting a simple digital presence.</td>
+        <td data-label="Included">Single-page website; 2 social media platforms; 1 communication channel.</td>
+      </tr>
+      <tr>
+        <td data-label="Package"><strong>Scale Front Access</strong></td>
+        <td data-label="Price"><strong>R280/month</strong></td>
+        <td data-label="Target Audience">Individuals developing a personal brand.</td>
+        <td data-label="Included">Up to 3-page website; 4 social platforms; 3 communication channels.</td>
+      </tr>
+      <tr>
+        <td data-label="Package"><strong>Advance Front Access</strong></td>
+        <td data-label="Price"><strong>R760/month</strong></td>
+        <td data-label="Target Audience">Public figures, creators, or consultants.</td>
+        <td data-label="Included">Up to 5-page website; 5 social platforms; community building; newsletter system; 4 communication channels.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="note">
+    <h3>Note on Setup Fees</h3>
+    <p>Clients are responsible for setup fees, which ensure the desired product is delivered. LIDE creates, maintains, and operates all products.</p>
+  </div>
+</section>
+
+<section id="contact-details" class="container">
+  <h2>Contact Details</h2>
+  <ul class="package-list">
+    <li>Email: linkingidentities@gmail.com</li>
+    <li>Phone: 0767635053</li>
+    <li>Twitter: @LIDE012</li>
+    <li>Instagram: Linkidentity</li>
+  </ul>
+</section>
+
+<footer>
+  <div class="container">
+    <p>© <span id="year"></span> LIDE — Bridging People and Digital</p>
+    <ul class="footer-links">
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="solutions.html">Solutions</a></li>
+      <li><a href="contact.html">Contact</a></li>
     </ul>
-  </nav>
-</header>
-</div>
-<nav> <ul class="nav-link"> <li><a href="index.html" class="active">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="solutions.html">Solutions</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</div>
-</header>
-<section class="hero fullscreen"> <video autoplay muted loop playsinline class="hero-video"> <source src="lide-hero.mp4" type="video/mp4"> Your browser does not support the video tag. </video> <div class="hero-overlay"> <div class="hero-content"> <h1>Bridging People and Digital</h1> <p>Why Should the Digital World Feel Out of Reach?</p> <a href="#about-lide" class="btn primary">Discover More</a> </div>
-</div>
-</section>
-<section id="about-lide" class="features"> <div class="container"> <h2>About LIDE (Link-ID-Entity)</h2> <article> <h3>Mission & Purpose</h3> <p> LIDE (Link-ID-Entity) is a full-service digital environment company. We are dedicated to making digital tools accessible, affordable, and valuable for individuals, growing organisations, and enterprises. Our mission is to help clients thrive online by creating, managing, and maintaining digital ecosystems that enhance visibility, engagement, and efficiency. </p> </article> <article> <h3>Human-First Design</h3> <p> Every solution begins with people — we create experiences that feel natural, intuitive, and impactful . We build digital systems that work for everyone, empowering individuals and organizations to grow confidently in the digital world . </p> </article> <article> <h3>Scalability and Ownership</h3> <p> From startups to enterprises, LIDE’s ecosystems expand with your ambitions, helping you thrive in a connected future . We retain ownership of the systems we build, removing the burden and expense of maintaining and keeping up with the fast paced digital world. Our approach is scalable, flexible, and transparent, giving clients control and clarity. </p> </article> </div>
-</section>
-<section id="services"> <div class="container"> <h2>What We Do</h2> <p> We build and maintain your digital presence across multiple platforms and systems. Our services are grouped into three key areas: </p> <ol> <li> <strong>Front Access</strong> – Your public-facing digital identity. <p>Includes Websites, social media integration, messaging systems, streaming tools, and community platforms. Designed to make you visible, accessible, and engaging to your audience.</p> </li> <li> <strong>Function Access</strong> – Tools that execute tasks and save time. <p>Includes Automation, chatbots, and workflow systems. Helps you work smarter and focus on growth instead of repetitive tasks.</p> </li> <li> <strong>Environment Access</strong> – Your internal digital ecosystem. <p>Includes Hosting, internal communication, data management, and analytics. Ensures smooth, secure, and efficient operations behind the scenes.</p> </li> </ol> <h3>How Our Model Works</h3> <ul class="package-list"> <li><strong>Setup Fee</strong> – Builds your custom digital environment.</li>
-<li><strong>Subscription Fee</strong> – Maintains your access to systems, updates, and ongoing support.</li>
-</ul> <h3>Who We Serve</h3> <ul class="package-list"> <li><strong>Individuals</strong> – Establish a professional digital presence easily.</li>
-<li><strong>Developing Organisations</strong> – Grow visibility, engagement, and reach efficiently.</li>
-<li><strong>Enterprises</strong> – Maintain high-performance digital ecosystems with consistency and reliability.</li>
-</ul> </div>
-</section>
-<section id="subscriptions"> <div class="container"> <h2>FRONT ACCESS SUBSCRIPTION (FAS) PACKAGES</h2> <h3>INDIVIDUAL PACKAGES</h3> <table> <thead> <tr> <th>Package</th>
-<th>Price</th>
-<th>Target Audience</th>
-<th>What is Included</th>
-</tr>
-</thead>
-<tbody> <tr> <td><strong>Startup Front Access</strong></td>
-<td><strong>R120/month</strong></td>
-<td>For individuals who want a simple, active digital presence.</td>
-<td>Single-page profiling website; 2 social media platforms; Up to 1 communication channel.</td>
-</tr>
-<tr> <td><strong>Scale Front Access</strong></td>
-<td><strong>R280/month</strong></td>
-<td>For individuals developing a personal brand or growing their audience.</td>
-<td>Basic profiling website (up to 3 pages); Up to 4 social media platforms; Up to 3 communication channels.</td>
-</tr>
-<tr> <td><strong>Advance Front Access</strong></td>
-<td><strong>R760/month</strong></td>
-<td>For individuals operating as public figures, creators, or consultants who need a full, managed presence.</td>
-<td>Hosting for a dynamic website (up to 5 pages); Up to five connected social platforms; Community building; Weekly Newsletter system; Up to 4 communication channels.</td>
-</tr>
-</tbody>
-</table> <h3>ORGANISATION DEVELOPMENT</h3> <table> <thead> <tr> <th>Package</th>
-<th>Price</th>
-<th>Target Audience</th>
-<th>What is Included</th>
-</tr>
-</thead>
-<tbody> <tr> <td><strong>Startup Front Access</strong></td>
-<td><strong>R240/month</strong></td>
-<td>For small or growing organisations needing a solid, professional online foundation.</td>
-<td>Basic 2 - 4 page website; Up to 2 social media platforms; Up to 2 Communication channels.</td>
-</tr>
-<tr> <td><strong>Scale Front Access</strong></td>
-<td><strong>R640/month</strong></td>
-<td>For organisations expanding their public visibility and engagement.</td>
-<td>Purposeful website from 4 pages; Up to 4 social media platforms; Up to 3 Communication channels; Community building (digital).</td>
-</tr>
-<tr> <td><strong>Advance Front Access</strong></td>
-<td><strong>R1,300/month</strong></td>
-<td>For developing organisations ready to manage a fully connected digital ecosystem.</td>
-<td>Full function dynamic website; Up to 7 social media platforms; Chatbot; Up to 5 Communication channels; Community building (digital).</td>
-</tr>
-</tbody>
-</table> <h3>🏢 ENTERPRISE — FRONT ACCESS SUBSCRIPTION</h3> <table> <thead> <tr> <th>Package</th>
-<th>Price</th>
-<th>Target Audience</th>
-<th>What is Included</th>
-<th>Add-ons</th>
-</tr>
-</thead>
-<tbody> <tr> <td><strong>Startup Front Access</strong></td>
-<td><strong>R2,500/month</strong></td>
-<td>For large organisations or corporations establishing their professional digital footprint.</td>
-<td>Hosting for a branded landing platform or mini-website; Verified communication channels (email, WhatsApp, Telegram); Up to two connected social media platforms; Monthly maintenance and consultation check-ins; Basic performance summary for engagement and visibility.</td>
-<td>N/A</td>
-</tr>
-<tr> <td><strong>Scale Front Access</strong></td>
-<td><strong>R2,400/month</strong></td>
-<td>For enterprises looking to expand visibility and manage multi-channel communication.</td>
-<td>Hosting for a multi-page website or communication hub (up to 6 pages); Up to four connected social media platforms; Automated inquiry and feedback systems; Monthly consultation and performance review sessions; Analytics overview of engagement and reach.</td>
-<td>Chatbot setup and management — R300/month; Newsletter, blog, or content automation — R150/month; Verification support — R150 once-off.</td>
-</tr>
-<tr> <td><strong>Advance Front Access</strong></td>
-<td><strong>R4,000/month</strong></td>
-<td>For enterprises requiring a fully managed, high-performance public digital ecosystem.</td>
-<td>Hosting for a dynamic, multi-page website or hub (up to 10 pages); Up to six connected social media platforms; Advanced automated inquiry, contact, and engagement tools; Monthly analytics dashboard with actionable insights; Dedicated consultation and technical support.</td>
-<td>Chatbot setup and management — R400/month; Digital community or event portal — R200/month; Content automation or workflow tools — R150/month; Newsletter and campaigns — R150/month.</td>
-</tr>
-</tbody>
-</table> <div class="note"> <h3>Note on Setup Fees</h3> <p> Clients are responsible for **setup fees**, which ensure clients get the desired product. LIDE creates, maintains, and operates the products. For instance, if a client establishes a regular social media profile, which costs no fee, then it wouldn’t be quoted. However, **if a client wants verification, then the client is liable for the setup of the verification**. </p> </div>
-</div>
-</section>
-<section id="contact-details"> <div class="container"> <h2>Contact Details</h2> <ul class="package-list"> <li>Email: linkingidentities@gmail.com</li>
-<li>Phone: 0767635053</li>
-<li>X (Twitter): @LIDE012</li>
-<li>INSTAGRAM: Linkidentity</li>
-</ul> </div>
-</section>
-<footer> <div class="container"> <p>© <span id="year"></span> LIDE — Bridging People and Digital</p> <ul class="footer-links"> <li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="solutions.html">Solutions</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul> </div>
+  </div>
 </footer>
-<script src="script.js"></script>
+
+<script>
+// Hamburger toggle
+const mobileMenu = document.getElementById("mobile-menu");
+const navLinks = document.getElementById("nav-links");
+
+mobileMenu.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+// Navbar scroll effect
+window.addEventListener("scroll", () => {
+  const header = document.querySelector(".overlay-header");
+  if (window.scrollY > 80) {
+    header.classList.add("solid-nav");
+  } else {
+    header.classList.remove("solid-nav");
+  }
+});
+
+// Update footer year
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
-
-
-```
-
-
