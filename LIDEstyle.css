@@ -387,4 +387,94 @@ footer {
   #subscriptions td:nth-child(2) {
     text-align: right;
   }
+
+}
+
+/* === MOBILE RESPONSIVENESS FIX === */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .content-section {
+    padding: 80px 8%;
+  }
+
+  #about, #services, #contact {
+    width: 95%;
+    padding: 40px 10px;
+  }
+}
+
+/* For phones */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 15px 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  .btn-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #about, #services, #contact {
+    width: 100%;
+    margin: 30px auto;
+    padding: 40px 20px;
+    font-size: 1rem;
+  }
+
+  #about h2, #services h2, #contact h2 {
+    font-size: 1.8rem;
+  }
+
+  #about p, #services p, #contact p {
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+
+/* For very small phones */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-content p {
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+  }
+
+  #about, #services, #contact {
+    font-size: 0.95rem;
+  }
 }
