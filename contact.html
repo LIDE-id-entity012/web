@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — LIDE</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="LIDEstyle.css" />
+  </head>
+
+  <body>
+    <!-- ===== Header & Navigation ===== -->
+    <header>
+      <div class="container header-container">
+        <div class="logo">
+          <a href="index.html">LIDE</a>
+        </div>
+
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ===== Contact Hero Section ===== -->
+    <section class="hero">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>
+          We’d love to hear from you. Whether you’re exploring digital
+          opportunities, seeking a partnership, or just curious about what LIDE
+          can offer — our team is here to help you connect with the right
+          solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Contact Form Section ===== -->
+    <section class="features" style="background-color: var(--light-gray);">
+      <div class="container">
+        <article style="grid-column: span 3;">
+          <h3>Send Us a Message</h3>
+          <form class="contact-form" action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="How can we help?" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="btn primary">Send Message</button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Contact Info Section ===== -->
+    <section class="team">
+      <div class="container" style="text-align: center;">
+        <h3 style="color: var(--maroon-dark); margin-bottom: 1rem;">More Ways to Reach Us</h3>
+        <p style="max-width: 700px; margin: 0 auto 1rem;">
+          Email: <strong>linkingidentities@gmail.com</strong><br />
+          Phone: <strong>+27 76 763 5053</strong><br />
+        </p>
+        <p style="color: var(--maroon-dark); font-weight: 500;">
+          Follow us on digital — let’s make the world more connected.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <div class="container">
+        <p>© <span id="year"></span> LIDE — Bridging People and Digital</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="solutions.html">Solutions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
