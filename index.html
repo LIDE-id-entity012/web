@@ -137,32 +137,30 @@
   </div>
 </footer>
 
+   <!-- START: JavaScript Implementation -->
 <script>
-// Hamburger toggle
-const mobileMenu = document.getElementById("mobile-menu");
-const navLinks = document.getElementById("nav-links");
+document.addEventListener('DOMContentLoaded', () => {
+  // Hamburger toggle
+  const mobileMenu = document.getElementById("mobile-menu");
+  const navLinks = document.getElementById("nav-links");
 
-mobileMenu.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+  mobileMenu.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  // Navbar scroll effect
+  const nav = document.querySelector('.nav-links');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Update footer year
+  document.getElementById("year").textContent = new Date().getFullYear();
 });
-
-// Navbar scroll effect
- <!-- START: JavaScript Implementation -->
-  <script>
-    // Ensure scroll listener is added after DOM is loaded
-    document.addEventListener('DOMContentLoaded', () => {
-        const nav = document.querySelector('.nav-links');
-        nav.classList.toggle('scrolled', window.scrollY > 50);
-        window.addEventListener('scroll', () => {
-            nav.classList.toggle('scrolled', window.scrollY > 50);
-        });
-    });
-
-// Update footer year
-document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
 </html>
+
 
 
