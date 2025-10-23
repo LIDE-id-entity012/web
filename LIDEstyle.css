@@ -20,11 +20,18 @@ html {
   scroll-behavior: smooth; /* smooth scrolling */
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Segoe UI", Roboto, Arial, sans-serif;
   color: var(--text-dark);
   background-color: var(--white);
   line-height: 1.6;
+  overflow-x: hidden;
+}
 }
 
 .container {
@@ -326,4 +333,5 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
