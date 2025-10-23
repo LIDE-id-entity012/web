@@ -147,14 +147,16 @@ mobileMenu.addEventListener("click", () => {
 });
 
 // Navbar scroll effect
-window.addEventListener("scroll", () => {
-  const header = document.querySelector(".overlay-header");
-  if (window.scrollY > 80) {
-    header.classList.add("solid-nav");
-  } else {
-    header.classList.remove("solid-nav");
-  }
-});
+ <!-- START: JavaScript Implementation -->
+  <script>
+    // Ensure scroll listener is added after DOM is loaded
+    document.addEventListener('DOMContentLoaded', () => {
+        const nav = document.querySelector('.nav-links');
+        nav.classList.toggle('scrolled', window.scrollY > 50);
+        window.addEventListener('scroll', () => {
+            nav.classList.toggle('scrolled', window.scrollY > 50);
+        });
+    });
 
 // Update footer year
 document.getElementById("year").textContent = new Date().getFullYear();
@@ -162,3 +164,4 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 </body>
 </html>
+
