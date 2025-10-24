@@ -21,7 +21,7 @@ html {
 }
 
 html, body {
-  max-width: 10%;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -333,6 +333,7 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+
 
 
 
